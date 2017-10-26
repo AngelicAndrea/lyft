@@ -1,3 +1,114 @@
 /*
- * Estilos de tu proyecto
+hay primer objeto le coloco margin 0
  */
+ html, body{
+ 	margin: 0 auto;
+ 	padding: 0 auto;
+ 	font-family: 'Montserrat', sans-serif;
+/* Primera parte, el menu*/
+ }
+ #contenedor1{
+ 	background-image: url(../assets/images/hero.gif); /* mas fácil ya que en el html debería usar position relative*/
+ 	/*background-repeat: no-repeat; no se repita la imagen, cuando es pequeña*/
+ 	background-position: center;
+ 	background-size: cover; /*ocupe la pantalla completa*/
+ 	height: 600px;
+ 	overflow: hidden;
+ }
+ nav{
+ 	outline: 1px solid #fff;*/
+ 	background: transparent;
+ 	width: 100%;
+ 	padding: 24px 8px;
+ }
+ .logo img{
+ 	width: 64px;
+ 	padding: 16px 0px 16px 32px;
+ }
+ li{
+ 	/*border: 1px solid pink;*/
+ 	display: inline-block;
+ 
+ }
+ ul{
+ 	/*border: 1px solid yellow;*/
+ 	margin: 0px;
+ 	padding: 0px;
+ 	padding-top: 0px;
+ }
+li a{
+	text-decoration: none;
+	color: #d8dce6;
+	font-weight: 300;
+	font-size: 20px;
+}
+li:last-child{ /* llamo al último hijo de li, en este caso login*/
+	border: 1px solid #d8dce6;
+	padding: 8px 16px;
+	border-radius: 5px;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 12px;
+}
+li:first-child{
+	padding-left: 38px;
+	width: 754px;
+	height: 77px;
+}
+.drive, .explore, .help{
+	padding: 20px 50px 0px 0px;
+	vertical-align: top;
+}
+.help{
+	padding: 20px 20px 0px 0px;
+} 
+#contenedor2{
+	float: right;
+	background: #fff;
+	width: 446px;
+	height: 291px;
+	padding: 64px;
+}
+#contenedor2 h1{
+	font-weight: 700;
+	font-size: 40px;
+	color: #352384;
+	margin: 0px;
+}
+#contenedor2 .texto1{
+	font-size: 15px;
+	color: #352384;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+#contenedor2 input{
+	padding: 12px 0px;
+	font-weight: 300;
+	color: #bfc7d9;
+	font-size: 18px;
+	width: 440px;
+	border-color: transparent;
+	padding-bottom: 5px;
+}
+#contenedor2 hr{
+	margin: 0px 0px 10px 0px;
+	color: #352384;
+}
+.boton1, .boton2{
+	display: inline-block;
+}
+.boton1{
+	width: 185px;
+	height: 51px;
+	background-color: #ff00bf;
+	border-radius: 5px;
+	line-height: 50px;
+}
+.boton1 a{
+	border: 1px solid blue;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+	width: 185px;
+	height: 51px;
+}	
