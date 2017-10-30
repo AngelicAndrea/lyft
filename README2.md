@@ -1,9 +1,9 @@
-#Lyft
+# Lyft
 
 Realizar una maqueta de una página web con HTML y CSS. Me entregaron la 
 información las imagenes, carpetas y los archivos en donde guardar los avances.
 
-##Objetivo
+## Objetivo
 
 1. Primero clonear repositorio, en donde estaban las carpetas con imagenes y poder trabajar 
 sobre ellos. Archivo HTML y CSS.
@@ -22,4 +22,4 @@ sobre ellos. Archivo HTML y CSS.
 
 4. Agrege la carpeta para incorporar los iconos de las redes sociales. `font-awesome-4.7.0`.
 
-* Puedes ver la[maqueta realizada por mi](https://angelicandrea.github.io/lyft/)
+* Puedes ver la [maqueta realizada por mi](https://angelicandrea.github.io/lyft/)
