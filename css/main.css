@@ -5,18 +5,27 @@ hay primer objeto le coloco margin 0
  	margin: 0 auto;
  	padding: 0 auto;
  	font-family: 'Montserrat', sans-serif;
-/* Primera parte, el menu*/
+/* MENU*/
  }
- #contenedor1{
+ #contenedor1{ /*colocar imagen de fondo */
  	background-image: url(../assets/images/hero.gif); /* mas fácil ya que en el html debería usar position relative*/
  	/*background-repeat: no-repeat; no se repita la imagen, cuando es pequeña*/
  	background-position: center;
  	background-size: cover; /*ocupe la pantalla completa*/
  	height: 600px;
  	overflow: hidden;
+ 	position: relative;
  }
+ .contenedor-transparente{
+	/*border: 1px solid red;*/
+	background: linear-gradient(transparent,#76278f);
+	position: absolute;
+	width: 100%;
+	height: 112px;
+	margin-top: 359px;
+}
  nav{
- 	outline: 1px solid #fff;*/
+ 	/*outline: 1px solid #fff;*/
  	background: transparent;
  	width: 100%;
  	padding: 24px 8px;
@@ -25,24 +34,24 @@ hay primer objeto le coloco margin 0
  	width: 64px;
  	padding: 16px 0px 16px 32px;
  }
- li{
+ .menu ul li{
  	/*border: 1px solid pink;*/
  	display: inline-block;
  
  }
- ul{
+ .menu ul{
  	/*border: 1px solid yellow;*/
  	margin: 0px;
  	padding: 0px;
  	padding-top: 0px;
  }
-li a{
+.menu ul li a{
 	text-decoration: none;
 	color: #d8dce6;
 	font-weight: 300;
 	font-size: 20px;
 }
-li:last-child{ /* llamo al último hijo de li, en este caso login*/
+.menu ul li:last-child{ /* llamo al último hijo de li, en este caso login*/
 	border: 1px solid #d8dce6;
 	padding: 8px 16px;
 	border-radius: 5px;
@@ -50,7 +59,7 @@ li:last-child{ /* llamo al último hijo de li, en este caso login*/
 	vertical-align: top;
 	margin-top: 12px;
 }
-li:first-child{
+.menu ul li:first-child{
 	padding-left: 38px;
 	width: 754px;
 	height: 77px;
@@ -61,7 +70,8 @@ li:first-child{
 }
 .help{
 	padding: 20px 20px 0px 0px;
-} 
+}
+/* HOJA 1° imagen de fondo*/ 
 #contenedor2{
 	float: right;
 	background: #fff;
@@ -102,13 +112,217 @@ li:first-child{
 	height: 51px;
 	background-color: #ff00bf;
 	border-radius: 5px;
-	line-height: 50px;
+	line-height: 55px;
 }
 .boton1 a{
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 	color: #fff;
 	text-decoration: none;
-	font-size: 15px;
+	font-size: 17px;
 	width: 185px;
-	height: 51px;
+	padding: 15px 23px;
+}
+.boton2 a{
+	/*border: 1.3px solid red;*/
+	text-decoration: none;
+	padding: 12px 20px;
+	color: #728099;
 }	
+.boton2 a:hover{
+	color: #ff00bf;
+}
+.texto2{
+	font-weight: 300;
+	color: #728099;
+	font-size: 10px;
+	line-height: 20px;
+}
+.texto2 a{
+	text-decoration: none;
+	color: #ff00bf;
+}
+.texto2 a:hover{
+	text-decoration: underline;
+}
+
+/* 3° Hoja fondo de color*/
+#contenedor3{
+	background: linear-gradient(#76278f,#2b1e66);
+	height: 640px;
+	overflow: hidden;
+}
+.contenedor-color{
+	display: inline-block;
+	color: #fff;
+	padding-left: 100px;
+	padding-top: 50px;
+	float: left;
+}
+.imagen1{
+	/*border: 1px solid red;*/
+	display: inline-block;
+	width: 517px;
+	padding-left: 158px;
+	padding-top: 0px;
+	float: left;
+}
+.contenedor-color h1{
+	font-weight: 500;
+	font-size: 30px;
+	letter-spacing: 2px;
+}
+.contenedor-color p{
+	font-weight: 300;
+	line-height: 26px;
+	margin-bottom: 60px;
+}
+/* HOJA 4 videos*/
+.contenedor4{
+	overflow: hidden;
+}
+.texto3{
+	display: inline-block;
+	padding-left: 58px;
+	float: left;
+}
+.contenedor4 h6{
+	text-transform: uppercase;
+	margin: 0px;
+	padding-top: 30px;
+	font-size: 10px;
+}
+.contenedor4 h3{
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0px;
+	font-size: 27px;
+}
+.contenedor4 p{
+	font-weight: 300;
+	line-height: 22px;
+	margin: 0px;
+	padding-top: 41px;
+	letter-spacing: 1px;
+}
+.video1{
+	display: inline-block;
+	float: right;
+}
+.texto4{
+	display: inline-block;
+	float: right;
+	padding-right: 52px;
+}
+.video2{
+	display: inline-block;
+	float: left;
+}
+.texto5{
+	display: inline-block;
+	float: left;
+	padding-left: 58px;
+}
+.video3{
+	display: inline-block;
+	float: right;
+/* HOJA 5 PIE DE PÁGINA*/
+}
+#contenedor5{
+	background: #333447;
+	margin: 0px;
+	width: 100%
+	height: 542px;
+	overflow: hidden;
+}
+.Lista1{
+	margin: 0px;
+	list-style: none;
+	padding-left: 130px;
+	float: left;
+}
+#contenedor5 ul li a{
+	text-decoration: none;
+	color: #f3f3f5;
+	font-weight: 400;
+	line-height: 50px;	
+}
+#contenedor5 ul li:first-child{
+	text-transform: uppercase;
+	font-size: 20px;
+	padding-top: 66px;
+}
+#contenedor5 ul li a:hover{
+	color:#ff00bf;
+
+}
+#contenedor5 ul li:first-child a:hover{
+    color: #fff;
+	text-decoration: underline;
+}
+.Lista2{
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding-left: 164px;
+}
+.Lista3{
+	list-style: none;
+	float: left;
+	margin: 0px;
+	padding-left: 164px;
+}
+.Lista4 img{
+	width: 130px;
+}
+.Lista4{
+	list-style: none;
+	float: right;
+	padding-right: 280px;
+} 
+.redes-sociales{
+	clear: both;
+	/*border: 1px solid red;*/
+	text-align: center;
+	padding-top: 85px;
+	padding-bottom: 20px;
+}
+.redes-sociales a{
+	text-decoration: none;
+	color: #fff;
+	padding: 40px;
+}
+.fa{
+	border: 1px solid #fff;
+	padding: 10px;
+}
+.fa-facebook{
+	padding: 11px 15px;
+	border-radius: 50px;
+}
+.fa-instagram{
+	padding: 11px 13px;
+	border-radius: 50px;
+}
+.fa-twitter{
+	padding: 12px 12px;
+	border-radius: 50px;
+}
+hr{
+	width: 766px;
+	margin-top: 0px;
+	border: 0.5px solid #fff;
+}
+#contenedor5 p{
+	font-weight: 300;
+	color: #fff;
+	text-align: center;
+	padding-bottom: 50px;
+}
+#contenedor5 p a{
+	text-decoration: none;
+	color: #fff;
+}
+#contenedor5 p a:hover{
+	text-decoration: underline;
+	color: #ff00bf;
+}
